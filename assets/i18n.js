@@ -1,6 +1,8 @@
 // Translations. Bulgarian (bg) is the text in index.html; it is read from the page at startup.
 window.I18N = {
   en: {
+    "bar.call": "Call us",
+    "bar.route": "Directions",
     "meta.title": "Klara Decor | Flower boutique in Kardzhali",
     "meta.description": "Klara Decor is a flower boutique in Kardzhali: bouquets, arrangements, potted plants, home decor and gifts. Winner of the “Eagles of Floristry” ranking and laureate of the “Golden Company” award.",
     "nav.menu": "Menu",
@@ -67,6 +69,8 @@ window.I18N = {
     "footer.rights": "Klara Decor. All rights reserved."
   },
   tr: {
+    "bar.call": "Bizi arayın",
+    "bar.route": "Yol tarifi",
     "meta.title": "Klara Dekor | Kırcaali'de çiçek butiği",
     "meta.description": "Klara Dekor, Kırcaali'de bir çiçek butiğidir: buketler, aranjmanlar, saksı çiçekleri, ev dekorasyonu ve hediyeler. “Çiçekçiliğin Kartalları” sıralamasının kazananı ve “Altın Firma” ödülü sahibi.",
     "nav.menu": "Menü",
@@ -133,6 +137,8 @@ window.I18N = {
     "footer.rights": "Klara Dekor. Tüm hakları saklıdır."
   },
   ru: {
+    "bar.call": "Позвонить",
+    "bar.route": "Маршрут",
     "meta.title": "Клара Декор | Цветочный бутик в Кырджали",
     "meta.description": "Клара Декор — цветочный бутик в Кырджали: букеты, композиции, комнатные растения, декор и подарки. Победитель рейтинга «Орлы цветоводства» и лауреат конкурса «Золотая фирма».",
     "nav.menu": "Меню",
