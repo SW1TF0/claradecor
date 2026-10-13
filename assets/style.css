@@ -92,9 +92,9 @@ p { margin: 0 0 1em; }
     max-height: 0; overflow: hidden;
     transition: max-height .35s ease;
   }
-  .nav-menu.open { max-height: 400px; }
+  .nav-menu.open { max-height: 520px; }
   .nav-menu a { padding: 14px 0; }
-  .nav-menu .btn { margin: 8px 0 20px; }
+  .nav-menu a.btn { margin: 8px 0 12px; padding: 11px 30px; }
   .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -293,3 +293,37 @@ p { margin: 0 0 1em; }
 .award svg { width: 46px; height: 46px; flex: none; fill: none; stroke: #9a7432; stroke-width: 2; stroke-linejoin: round; }
 .award p { margin: 0; font-size: .92rem; }
 .award strong { font-family: var(--serif); font-size: 1.25rem; }
+
+/* Falling petals (drawn on a canvas above the page, never blocks clicks) */
+#petals { position: fixed; inset: 0; z-index: 40; pointer-events: none; }
+
+/* Language switch */
+.lang-switch { display: flex; gap: 2px; padding: 3px; border-radius: 999px; background: rgba(168,113,95,.1); }
+.lang-switch button {
+  font: 600 .72rem/1 var(--sans); letter-spacing: .06em;
+  color: var(--muted); background: none; border: 0;
+  padding: 7px 9px; border-radius: 999px; cursor: pointer;
+}
+.lang-switch button:hover { color: var(--rose-dark); }
+.lang-switch button[aria-pressed="true"] { background: var(--rose-dark); color: var(--white); }
+.lang-switch button:focus-visible, .btn:focus-visible, .nav-menu a:focus-visible { outline: 2px solid var(--rose-dark); outline-offset: 2px; }
+@media (max-width: 820px) { .lang-switch { margin: 4px 0 20px; } }
+@media (min-width: 821px) and (max-width: 1080px) { .nav-menu { gap: 18px; } .nav-menu a { font-size: .84rem; } }
+
+/* Hero award pill */
+.hero-award {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-top: 28px; padding: 9px 16px 9px 12px;
+  border-radius: 999px; background: linear-gradient(135deg, #f7ecd6, #efdcb7);
+  color: var(--ink); text-decoration: none; font-size: .85rem; font-weight: 500;
+  transition: transform .2s;
+}
+.hero-award:hover { transform: translateY(-2px); }
+.hero-award svg { width: 18px; height: 18px; fill: #b8913f; flex: none; }
+
+/* Awards list */
+.awards { display: grid; gap: 12px; margin-top: 28px; }
+.awards .award { margin-top: 0; }
+.award a { color: #8a6526; font-weight: 600; font-size: .85rem; text-decoration: none; }
+.award a:hover { text-decoration: underline; }
+.award-thanks { margin: 4px 0 0; font-size: .9rem; color: var(--muted); font-style: italic; }
