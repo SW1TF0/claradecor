@@ -66,7 +66,7 @@ window.I18N = {
     "contact.phone": "Phone",
     "contact.msg": "Message us",
     "footer.tag": "Flower boutique · Kardzhali",
-    "footer.rights": "Klara Decor. All rights reserved."
+    "footer.rights": "Powered by SmartMenuKJ. All rights reserved."
   },
   tr: {
     "bar.call": "Bizi arayın",
@@ -134,7 +134,7 @@ window.I18N = {
     "contact.phone": "Telefon",
     "contact.msg": "Bize yazın",
     "footer.tag": "Çiçek butiği · Kırcaali",
-    "footer.rights": "Klara Dekor. Tüm hakları saklıdır."
+    "footer.rights": "Powered by SmartMenuKJ. Tüm hakları saklıdır."
   },
   ru: {
     "bar.call": "Позвонить",
@@ -202,6 +202,6 @@ window.I18N = {
     "contact.phone": "Телефон",
     "contact.msg": "Написать нам",
     "footer.tag": "Цветочный бутик · Кырджали",
-    "footer.rights": "Клара Декор. Все права защищены."
+    "footer.rights": "Powered by SmartMenuKJ. Все права защищены."
   }
 };
